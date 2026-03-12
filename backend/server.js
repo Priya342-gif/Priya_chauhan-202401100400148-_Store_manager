@@ -10,8 +10,8 @@ const app = express();
 app.use(express.json());
 
 // Routes
-const employeeRoutes = require("./routes/employeeRoutes");
-app.use("/employees", employeeRoutes);
+const productRoutes = require("./routes/productRoutes");
+app.use("/api", productRoutes);
 
 // Default Route
 app.get("/", (req, res) => {
